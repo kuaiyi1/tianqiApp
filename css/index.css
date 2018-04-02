@@ -56,7 +56,7 @@ body{
 	margin-top: .9rem;
 	line-height: .51rem;
 }
-.now_weather_feng{
+.now_weather_feng,.now_weather_fengxiang,.now_weather_fengji{
 	margin-top: .54rem;
 	color: #fff;
 	text-align: center;
@@ -113,10 +113,16 @@ body{
    float: right;
 }
 .today_img,.tomorrow_img{
-	width: .72rem;
-	height: .72rem;
+	width: 1.44rem;
+	height: 1.44rem;
 	float: right;
 
+}
+.tomorrow_img img,.today_img img{
+	width: .72rem;
+	height: .72rem;
+	float: left;
+	display: block;
 }
 #hours{
 	width: 100%;
@@ -140,6 +146,11 @@ body{
 	align-content: space-around;
 	flex-shrink: 0;
 }
+.ye{
+	display: none;
+	width: 100%;
+	height: auto;
+}
 .hours_img{
 	width: 1rem;
 	height: 1rem;
@@ -162,7 +173,7 @@ body{
 
 }
 #fulture_week li{
-	width: 2rem;
+	width: 3rem;
 	height: 100%;
 	
 	padding: .96rem 0;
@@ -182,7 +193,7 @@ body{
 .fulture__week_day,.fulture__week_winter,.fulture__week_hightemp,.fulture__week_lowtemp,.fulture__week_wind,.fulture__week_windji{
 	font-size: .34rem;
 	text-align: center;
-	width: 2rem;
+	width: 3rem;
 }
 #hours::-webkit-scrollbar,#fulture_week::-webkit-scrollbar{
 	display: none;
@@ -191,13 +202,13 @@ body{
 #citys{
 	/* 撑开定位 */
 	width: 100vw;
-	height: 100vh;
-	overflow: hidden;
-	position: fixed;
+	/* height: 100vh;
+	overflow: hidden; */
+	/* position: fixed;
 	left: 0;
-	top: 0;
+	top: 0; */
 	/* z-index: 1; */
-	bottom: 0;
+	/* bottom: 0; */
 	margin: auto;
 	background-color: #f6f6f6;
 	/* position: absolute;
@@ -207,6 +218,10 @@ body{
 	top:0;
 	background-color: red; */
 
+}
+.fulture__week_img img{
+	width: 2rem;
+	height: 1rem;
 }
 header{
 	width: 100%;
@@ -231,23 +246,23 @@ header{
 	font-size: .44px;
 	color: #76a9ff;
 }
-.hotcitys{
+.hotcitys,.hotcitys1{
 	width: 100%;
 	/* overflow-y: scroll; */
 
 	
 	
 }
-.hotcitys_title{
+.hotcitys_title,.hotcitys_title1{
 	padding-top: .14rem;
 	padding-left: .32rem;
     width: 100%;
 }
-.hotcitys_title h1{
+.hotcitys_title h1,.hotcitys_title1 h1{
 	font-size: .44rem;
 	color: #999999;
 }
-.hotcitys_address{
+.hotcitys_address,.hotcitys_address1{
 	
 	margin-left: .29rem;
 	margin-top: .2rem;
@@ -258,7 +273,7 @@ header{
 	align-content: center ;
 
 }
-.hotcitys_address_item{
+.hotcitys_address_item,.hotcitys_address_item1{
 	width: 2.34rem;
 	height: .84rem;
 	border: .03rem solid #e0e0e0;
@@ -270,7 +285,7 @@ header{
 	/* box-sizing: border-box; */
 
 }
-.hotcitys_address_item p{
+.hotcitys_address_item p,.hotcitys_address_item1 p{
 	font-size: .38rem;
 	color: #000000;
 	text-align: center;
