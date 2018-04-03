@@ -26,6 +26,7 @@ body{
  		text-align: center;
  		line-height: 1.57rem;
  		height: 1.57rem;
+ 		position: relative;
 }
 .now_air{
 	width: 2.1rem;
@@ -147,9 +148,16 @@ body{
 	flex-shrink: 0;
 }
 .ye{
-	display: none;
+	/* display: none; */
 	width: 100%;
 	height: auto;
+}
+.sousuos{
+	position: absolute;
+	font-size: 0.36rem;
+	color: #fff;
+	top: 5vw;
+	right: 5vh;
 }
 .hours_img{
 	width: 1rem;
@@ -217,6 +225,7 @@ body{
 	bottom: 0;
 	top:0;
 	background-color: red; */
+	display: none;
 
 }
 .fulture__week_img img{
